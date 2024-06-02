@@ -8,10 +8,10 @@ void setup() {
 void loop() {
   int irValue = digitalRead(irReceiverPin);
 
-  if (irValue == HIGH) {
-    Serial.println("HIGH");
+  if (irValue == LOW) {
+    Serial.println("RECEIVED");
   } else {
-    Serial.println("LOW");
+    Serial.println("NOT RECEIVED");
   }
 
   delay(100); // Add a small delay to avoid flooding the serial monitor
@@ -21,7 +21,7 @@ void loop() {
 
 
 
-alternate*/
+>>>>>>>>>>>>>>>alternate>>>>>>>>>>>>>>>*/
 #include <IRremote.h>
 
 int RECV_PIN = 11; 
